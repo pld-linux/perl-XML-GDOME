@@ -1,22 +1,24 @@
-
+#
 # Conditional build:
 %bcond_with tests	# do not perform "make test"
-
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	XML
 %define	pnam	GDOME
-Summary:	Interface to Level 2 DOM gdome2 library
+Summary:	XML::GDOME - interface to Level 2 DOM gdome2 library
+Summary(pl):	XML::GDOME - interfejs do biblioteki DOM Level 2 gdome2
 Name:		perl-XML-GDOME
 Version:	0.83
 Release:	1
-License:	Same as Perl itself
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	95d53e06bedf634a03617ff11407788d
 Patch0:		%{name}-gdome_version.patch
+BuildRequires:	gdome2-devel >= 0.7.2
 BuildRequires:	perl-devel >= 5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	gdome2-devel >= 0.7.2
 %if %{with tests}
 BuildRequires:	perl-XML-LibXML-Common
 BuildRequires:	perl-XML-SAX
@@ -25,9 +27,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-XML::GDOME is a perl module that provides the DOM Level 2 Core API
-for accessing XML documents.
-It uses a XS wrapper around the gdome2 library.
+XML::GDOME is a Perl module that provides the DOM Level 2 Core API
+for accessing XML documents. It uses a XS wrapper around the gdome2
+library.
+
+%description -l pl
+XML::GDOME to modu³ Perla dostarczaj±cy podstawowe API DOM Level 2 do
+dostêpu do dokumentów XML. U¿ywa wrappera XS do biblioteki gdome2.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
