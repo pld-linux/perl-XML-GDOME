@@ -3,8 +3,8 @@
 %bcond_with tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	XML
-%define	pnam	GDOME
+%define		pdir	XML
+%define		pnam	GDOME
 Summary:	XML::GDOME - interface to Level 2 DOM gdome2 library
 Summary(pl):	XML::GDOME - interfejs do biblioteki DOM Level 2 gdome2
 Name:		perl-XML-GDOME
