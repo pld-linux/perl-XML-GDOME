@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_with tests	# do not perform "make test"
+%bcond_with tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	XML
@@ -40,7 +40,6 @@ dostêpu do dokumentów XML. U¿ywa wrappera XS do biblioteki gdome2.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
 %{__make} \
 	OPTIMIZE="%{rpmcflags}"
 
