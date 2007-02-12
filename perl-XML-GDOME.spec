@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	GDOME
 Summary:	XML::GDOME - interface to Level 2 DOM gdome2 library
-Summary(pl):	XML::GDOME - interfejs do biblioteki DOM Level 2 gdome2
+Summary(pl.UTF-8):   XML::GDOME - interfejs do biblioteki DOM Level 2 gdome2
 Name:		perl-XML-GDOME
 Version:	0.86
 Release:	2
@@ -29,9 +29,9 @@ XML::GDOME is a Perl module that provides the DOM Level 2 Core API
 for accessing XML documents. It uses a XS wrapper around the gdome2
 library.
 
-%description -l pl
-XML::GDOME to modu³ Perla dostarczaj±cy podstawowe API DOM Level 2 do
-dostêpu do dokumentów XML. U¿ywa wrappera XS do biblioteki gdome2.
+%description -l pl.UTF-8
+XML::GDOME to moduÅ‚ Perla dostarczajÄ…cy podstawowe API DOM Level 2 do
+dostÄ™pu do dokumentÃ³w XML. UÅ¼ywa wrappera XS do biblioteki gdome2.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
