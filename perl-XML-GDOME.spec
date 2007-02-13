@@ -6,7 +6,7 @@
 %define		pdir	XML
 %define		pnam	GDOME
 Summary:	XML::GDOME - interface to Level 2 DOM gdome2 library
-Summary(pl.UTF-8):   XML::GDOME - interfejs do biblioteki DOM Level 2 gdome2
+Summary(pl.UTF-8):	XML::GDOME - interfejs do biblioteki DOM Level 2 gdome2
 Name:		perl-XML-GDOME
 Version:	0.86
 Release:	2
