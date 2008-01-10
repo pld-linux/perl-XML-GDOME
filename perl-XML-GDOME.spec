@@ -40,6 +40,7 @@ dostępu do dokumentów XML. Używa wrappera XS do biblioteki gdome2.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
