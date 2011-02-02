@@ -17,6 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.ta
 # Source0-md5:	01ee59f686f9d409bdc316297942ea55
 URL:		http://search.cpan.org/dist/XML-GDOME/
 BuildRequires:	gdome2-devel >= 0.7.2
+BuildRequires:	glib-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -26,8 +27,8 @@ BuildRequires:	perl-XML-SAX
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-XML::GDOME is a Perl module that provides the DOM Level 2 Core API
-for accessing XML documents. It uses a XS wrapper around the gdome2
+XML::GDOME is a Perl module that provides the DOM Level 2 Core API for
+accessing XML documents. It uses a XS wrapper around the gdome2
 library.
 
 %description -l pl.UTF-8
