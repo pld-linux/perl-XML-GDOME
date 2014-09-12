@@ -63,6 +63,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/XML/GDOME
 %{perl_vendorarch}/XML/GDOME/SAX
 %dir %{perl_vendorarch}/auto/XML/GDOME
-%{perl_vendorarch}/auto/XML/GDOME/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/XML/GDOME/*.so
 %{_mandir}/man3/*
