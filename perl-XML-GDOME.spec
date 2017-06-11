@@ -9,7 +9,7 @@ Summary:	XML::GDOME - interface to Level 2 DOM gdome2 library
 Summary(pl.UTF-8):	XML::GDOME - interfejs do biblioteki DOM Level 2 gdome2
 Name:		perl-XML-GDOME
 Version:	0.86
-Release:	11
+Release:	12
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
