@@ -1,0 +1,25 @@
+diff -ur XML-GDOME-0.86.orig/dom.h XML-GDOME-0.86/dom.h
+--- XML-GDOME-0.86.orig/dom.h	2024-07-01 19:00:43.086016312 +0200
++++ XML-GDOME-0.86/dom.h	2024-07-01 19:01:21.739588201 +0200
+@@ -1,6 +1,8 @@
+ #ifndef __LIBXML_DOM_H__
+ #define __LIBXML_DOM_H__
+ 
++#include <libxml/xmlstring.h>
++
+ xmlChar*
+ domEncodeString( const char *encoding, const char *string );
+ char*
+Only in XML-GDOME-0.86: dom.h~
+diff -ur XML-GDOME-0.86.orig/generate XML-GDOME-0.86/generate
+--- XML-GDOME-0.86.orig/generate	2024-07-01 19:00:43.089349665 +0200
++++ XML-GDOME-0.86/generate	2024-07-01 19:01:59.399820625 +0200
+@@ -63,6 +63,7 @@
+ #include "perl.h"
+ #include "XSUB.h"
+ 
++#include <libxml/tree.h>
+ #include <libxml/xmlerror.h>
+ #include "gdome.h"
+ #include "gdome-xpath.h"
+Only in XML-GDOME-0.86: generate~

@@ -14,6 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	01ee59f686f9d409bdc316297942ea55
+Patch0:		libxml2.12.patch
 URL:		http://search.cpan.org/dist/XML-GDOME/
 BuildRequires:	gdome2-devel >= 0.7.2
 BuildRequires:	glib-devel
@@ -36,6 +37,10 @@ dostępu do dokumentów XML. Używa wrappera XS do biblioteki gdome2.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
+
+# regenerated
+%{__rm} GDOME.xs
 
 %build
 %{__perl} Makefile.PL \
