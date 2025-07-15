@@ -37,7 +37,7 @@ dostępu do dokumentów XML. Używa wrappera XS do biblioteki gdome2.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 # regenerated
 %{__rm} GDOME.xs
